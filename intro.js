@@ -998,3 +998,156 @@ function cc(card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+//now time to enter javas script object
+
+//array is object and they have properties and method such as object
+
+/*
+Make an object that represents a dog called myDog which contains the properties name (a string), legs, tails and friends.
+*/
+
+const myDog = {
+  "name" : "REX",
+  "legs" : 4,
+  "tails" : 1,
+  "friends" : ["Marco" ,"Polo"]
+ };
+
+
+ // accesing object properties or method with dot or [] notation
+
+const testObjz = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+
+const hatValue = testObj.hat;    
+const shirtValue = testObj.shirt;   
+
+console.log(hatValue);
+console.log(shirtValue);
+
+
+// also the same as the .notation with the bracket notation
+
+/*
+Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.
+*/
+
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+
+const entreeValue = testObj["an entree"];   
+const drinkValue =  testObj["the drink"];    
+
+
+// key value method
+const testObjx = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+/*
+Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
+*/
+
+const playerNumber = 16;  
+const player = testObj[playerNumber];  
+
+// Updating Object Properties since object is mutable with . or []
+const myDogs = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+/*
+Update the myDog object's name property. Let's change her name from Coder to Happy Coder. You can use either dot or bracket notation.
+*/
+
+myDog.name = "Happy Coder";
+
+//also true with myDog["name"] = "Happy Coder";
+
+//add properties to object in js/ts
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+/*
+Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
+*/
+
+myDog.bark ="woof"
+
+//also true myDog["bark"] ="woof";
+
+// Delete properties from a object
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+//Delete the tails property from myDog. You may use either dot or bracket notation.
+
+delete myDog["tails"];
+
+//also the same as delete myDog.tails;
+
+
+// Using objects for lookups
+function phoneticLookup(val) {
+  let result = "";
+
+/*
+Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+*/
+
+const lookup = {
+  "alpha" : "Adams",
+  "bravo" : "Boston",
+  "charlie" : "Chicago",
+  "delta" : "Denver",
+  "echo" : "Easy",
+  "foxtrot" : "Frank"
+}
+ 
+  result = lookup[val];
+
+  return result;
+}
+
+console.log(phoneticLookup("charlie"));
+
+
+//testing if object contains properties with the method hasOwnProperty(prop) and return boolean value
+/*
+Modify the function checkObj to test if the object passed to the function parameter obj contains the specific property passed to the function parameter checkProp. If the property passed to checkProp is found on obj, return that property's value. If not, return Not Found.
+*/
+
+function checkObj(obj, checkProp) {
+
+  if(obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  }
+    else{
+      return "Not Found";
+    }
+  }
+  
+  console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
