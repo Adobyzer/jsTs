@@ -114,9 +114,9 @@ const quotientz = 4.4 / 2.0;
 //reminder of the quotient ex 11%3 = 2
 const remainder = 11%3;
 
-let a = 3;
-let b = 17;
-let c = 12;
+var a = 3;
+var b = 17;
+var c = 12;
 
 //compound assignment ex :a=a+12 (can be writter a+=12)
 a+=12;
@@ -459,3 +459,14 @@ function addFive(){
 }
 addThree();
 addFive();
+
+
+// Assignment with a Returned Value
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+// Only change code below this line
