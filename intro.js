@@ -155,4 +155,149 @@ c/=11;
 
 /*single or double quote for string but for quote in string the /
 */
-const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; 
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; 
+
+// "" or '' is the same in js or ts but might be useful
+const myStrs = '<a href="http://www.example.com" target="_blank">Link</a>/';
+
+/* list of escape caracter to display it properly
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\t	tab
+\r	carriage return
+\b	backspace
+\f	form feed
+
+*/
+
+/* Give this preview ez with escape caracter
+FirstLine
+  SecondLine
+ThirdLine
+*/
+const myStrz = "FirstLine\n\t\\SecondLine\nThirdLine"; 
+
+//concatenate string "+" it will give This is the start. This is the end.
+var myStr = "This is the start." + ' This is the end.'; 
+
+//concatenate using plus equal operator += DONT FORGET SPACE IN CODE NO IN IDE
+let myStr="This is the first sentence.";
+myStr+=" This is the second sentence.";
+
+// Constructing string with variables
+const myName = "Adbz";
+const myStr = "My name is "+myName+" and I am well!";
+
+//Appending variables to strings
+const someAdjective = "noice harsh sometimes but its life saver";
+let myStr = "Learning to code is ";
+
+myStr+=someAdjective;
+
+
+// Setup
+let lastNameLength = 0;
+var lastName = "Lovelace";
+
+// assign lastNameLength with the attribute length of lastname
+lastNameLength = lastName.length;
+
+
+/* Use Bracket Notation to Find the First Character in a String index of a string variable
+*/
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// assigne first character of last name to firstLetterOfit
+firstLetterOfLastName = lastName[0];
+
+// single letter cant be modify = string immutability
+let myStr = "Jello World";
+
+// solution reassign the variable
+myStr = "Hello World";
+
+
+// Setup
+const lastName = "Lovelace";
+
+//find the third character and assign it 0 - 1 - 2 
+const thirdLetterOfLastName = lastName[2]; 
+
+// Setup
+const lastName = "Lovelace";
+
+// assign to last character 0 - lastName.length-1
+const lastLetterOfLastName = lastName[lastName.length-1];
+
+
+// Setup
+const lastName = "Lovelace";
+
+// second to last character
+const secondToLastLetterOfLastName = lastName[lastName.length-2];
+
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// It will give The big dog ran quicly
+const wordBlanks = "The" +" " + myAdjective + " " +myNoun + " " + myVerb +" " +myAdverb; 
+
+
+// first step of data structure : array store multiple var
+var myArray = ["learning" , 2 , "code in js for understanding basic of TS"];
+
+/* 2D array lets do it nested it will display this
+x y
+1 2
+*/
+const myArray = [["x","y"],[1,2]];
+
+
+const myArray = [50, 60, 70];
+
+/*accesing array using index notation
+-Create a variable called myData and set it to equal the first value of myArray using bracket notation.
+*/
+
+let myData = myArray[0];
+
+// Setup
+const myArray = [18, 64, 99];
+
+// unlike string array are MUTABLE even if declare const
+/*
+Modify the data stored at index 0 of myArray to a value of 45.
+*/
+myArray[0] =45;
+
+//multidimensionnal array lets do it !
+
+const myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+  //so now its 3D and myArray[3] [0] = [10,11,12] and myArray[3][2] = 14
+  
+  /*
+  Using bracket notation select an element from myArray such that myData is equal to 8.
+  */
+
+  const myDatas = myArray[2][1];
+
+  //append data in array using push method
+const myArray = [["John", 23], ["cat", 2]];
+
+//Push ["dog", 3] onto the end of the myArray variable.
+
+myArray.push(["dog",3]);
